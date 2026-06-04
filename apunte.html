@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apunte</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        button {
+            margin: 3px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            front-size: 18px;
+            padding: 10px;
+        }
+
+        button:hover {
+            background-color: antiquewhite;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+        #git, #github {
+            display: none;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <button>inicio</button>
+            <button>git</button>
+            <button>git</button>
+        </nav>
+
+
+    </header>
+    <section id="inicio">
+        <img src="./apunte_files/images" alt="logo de git">
+        <img src="./apunte_files/images(1)" alt="logo de github">
+    </section>
+    <section id="git">
+        <h1>Git</h1>
+        <p>Git es un sistema de control de versiones distribuido. En términos simples, es una herramienta que registra
+            todos los cambios realizados en los archivos de un proyecto a lo largo del tiempo, permitiendo recuperar
+            versiones anteriores, comparar estados y trabajar en equipo sin sobreescribir el trabajo de otros.</p>
+
+
+        <h2>¿para que sirve?</h2>
+        <ul>
+            <li>Historial de cambios: Funciona como una "máquina del tiempo" que guarda instantáneas exactas del código.
+            </li>
+            <li>Trabajo colaborativo: Permite que varias personas editen los mismos archivos de manera simultánea sin
+                causar conflictos o pérdida de datos.</li>
+            <li>Ramas de desarrollo (Branches): Permite crear versiones alternas del proyecto para probar nuevas
+                funciones sin alterar el código principal.</li>
+
+
+        </ul>
+    </section>
+    <section id="github">
+        <h1> GitHub</h1>
+        <p>GitHub es una plataforma en la nube utilizada por desarrolladores para almacenar código fuente y colaborar en
+            proyectos de software. Funciona como una red social para programadores y un sistema de control de versiones,
+            permitiendo a múltiples personas trabajar juntas sin perder o sobreescribir el trabajo de los demás.</p>
+        <h2>¿para que sirve?</h2>
+        <ul>
+            <li>Control de versiones: Funciona como una máquina del tiempo para tu código. Permite guardar diferentes
+                versiones y regresar a un estado anterior si algo sale malControl de versiones: Funciona como una
+                máquina
+                del tiempo para tu código. Permite guardar diferentes versiones y regresar a un estado anterior si algo
+                sale
+                mal</li>
+            <li>Trabajo en equipo (Colaboración): Varios programadores pueden editar el mismo proyecto al mismo tiempo.
+                La
+                plataforma ayuda a fusionar sus cambios de forma lógica y segura.</li>
+            <li>Portafolio profesional: Es la red social de los programadores. Contar con un perfil activo y proyectos
+                subidos sirve como currículum para conseguir trabajo en el sector tecnológico.</li>
+
+
+
+
+        </ul>
+    </section>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
